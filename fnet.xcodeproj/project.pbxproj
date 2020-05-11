@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,8 @@
 		D81720322463617500507420 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D81720302463617500507420 /* LaunchScreen.storyboard */; };
 		D817203D2463617500507420 /* fnetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D817203C2463617500507420 /* fnetTests.swift */; };
 		D81720482463617500507420 /* fnetUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81720472463617500507420 /* fnetUITests.swift */; };
+		D8279B342466B2F10084E136 /* APIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8279B332466B2F10084E136 /* APIRequest.swift */; };
+		D859599E24655F5900DEC1D5 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D859599D24655F5900DEC1D5 /* PhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		D81720432463617500507420 /* fnetUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = fnetUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D81720472463617500507420 /* fnetUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fnetUITests.swift; sourceTree = "<group>"; };
 		D81720492463617500507420 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8279B332466B2F10084E136 /* APIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIRequest.swift; sourceTree = "<group>"; };
+		D859599D24655F5900DEC1D5 /* PhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 			children = (
 				D81720272463617300507420 /* AppDelegate.swift */,
 				D81720292463617300507420 /* ViewController.swift */,
+				D859599D24655F5900DEC1D5 /* PhotoViewController.swift */,
+				D8279B332466B2F10084E136 /* APIRequest.swift */,
 				D817202B2463617300507420 /* Main.storyboard */,
 				D817202E2463617500507420 /* Assets.xcassets */,
 				D81720302463617500507420 /* LaunchScreen.storyboard */,
@@ -205,7 +211,7 @@
 				};
 			};
 			buildConfigurationList = D817201F2463617300507420 /* Build configuration list for PBXProject "fnet" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 11.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -258,6 +264,8 @@
 			files = (
 				D817202A2463617300507420 /* ViewController.swift in Sources */,
 				D81720282463617300507420 /* AppDelegate.swift in Sources */,
+				D8279B342466B2F10084E136 /* APIRequest.swift in Sources */,
+				D859599E24655F5900DEC1D5 /* PhotoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,7 +371,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -418,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -433,7 +441,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D33F8575JC;
 				INFOPLIST_FILE = fnet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,7 +451,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = noid.fnet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,7 +460,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = D33F8575JC;
 				INFOPLIST_FILE = fnet/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -458,7 +470,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = noid.fnet;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
